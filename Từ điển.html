@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><p>tu dien</p>
+<input type="text" id="tienanh">
+<input type="button" onclick="tenganh()" value="dich tieng anh">
+<br>
+<input type="text" id="tiengiet">
+<input type="button" onclick="tiengiet()" value="dich tieng viet">
+
+<script>
+    let tienganh = ["hot", "cold", 'warm', 'dog', 'cat', "pig", "chicken"]
+    let tiengviet = ['nóng', 'lạnh', 'ấm', 'chó', 'mèo', 'lợn', 'gà']
+
+    function tenganh() {
+        for (let i = 0; i < tienganh.length; i++) {
+            if (tienganh[i] === document.getElementById("tienanh").value) {
+                alert(tiengviet[i])
+            }
+        }
+    }
+
+
+
+    function tiengiet() {
+        for (let i=0;i<tiengviet.length;i++){
+            if (tiengviet[i]===document.getElementById("tiengiet").value){
+                alert(tienganh[i])
+            }
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
